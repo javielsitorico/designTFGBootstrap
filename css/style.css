@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blanco: #F4F4F8;
+    --blanco-hover: #d4d4e0;
+    --negro: #1C1C1C;
+    --negro-claro: #2b2b2b;
+    --mostaza: #FED766;
+    --azul: #009FB7;
+}
+
+/* -- Globales -- */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+/* -- Cabecera -- */
+header {
+    background-color: var(--negro);
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+}
+
+header div.logo-cabecera {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+header div.logo-cabecera span {
+    color: var(--azul);
+}
+
+header div.logo-cabecera .logo--animacion * {
+    pointer-events: none;
+}
+
+header div.logo-cabecera .logo--animacion__word {
+    display: inline-flex;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+header div.logo-cabecera .logo--animacion__char-inner {
+    display: inline-block;
+}
+
+header div.logo-cabecera .logo--animacion__char-inner:after {
+    content: attr(data-letter);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: var(--mostaza);
+}
+
+header nav {
+    height: 120px;
+}
+
+header nav .barra-navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+header nav *>li {
+    list-style: none;
+}
+
+header nav .barra-navegacion .opcion-menu {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .barra-navegacion .opcion-menu a,
+header nav .barra-navegacion .opcion-menu .menu-desplegable li a {
+    color: var(--blanco);
+}
+
+header nav .barra-navegacion .opcion-menu a:hover{
+    color: var(--blanco-hover);
+}
+
+nav {
+    background-color: var(--navColor);
+}
+
+.navbar li:hover {
+    background-color: var(--navHover);
+}
+
+.menu-desplegable {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: none;
+    background-color: var(--negro-claro);
+    padding: 0;
+}
+
+.opcion-menu:hover {
+    background-color: var(--negro-claro);
+    cursor: default;
+}
+
+.opcion-menu:hover .menu-desplegable {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 80px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .barra-navegacion .opcion-menu .menu-desplegable li:hover a {
+    color: var(--blanco-hover);
+    cursor: pointer;
+}
+
+header .nav-lateral {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-lateral .nav-lateral--carrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid var(--blanco-hover);
+    border-radius: 5px;
+}
+
+.nav-lateral .nav-lateral--carrito svg {
+    padding: 3px 5px;
+}
+
+.nav-lateral--carrito--num-productos {
+    color: var(--negro);
+    background-color: var(--blanco);
+    height: max-content;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
