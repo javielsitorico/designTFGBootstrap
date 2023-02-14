@@ -137,14 +137,17 @@ nav {
     cursor: default;
 }
 
-.opcion-menu:hover .menu-desplegable {
-    display: flex;
+.opcion-menu .menu-desplegable {
     flex-direction: row;
     width: 100%;
     min-height: 80px;
     gap: 20px;
     justify-content: center;
     align-items: center;
+}
+
+.opcion-menu:hover .menu-desplegable {
+    display: flex;
 }
 
 header nav .barra-navegacion .opcion-menu .menu-desplegable li:hover a {
@@ -156,6 +159,10 @@ header .nav-lateral {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+header .nav-lateral--small {
+    display: none;
 }
 
 .nav-lateral .nav-lateral--carrito {
@@ -188,12 +195,17 @@ header .nav-lateral {
         flex-direction: column;
     }
     header .logo-cabecera {
-        margin: 15px 0;
+        margin-top: 20px;
     }
     header nav .barra-navegacion .opcion-menu .menu-desplegable {
-        top: 200px;
+        top: 262px;
+        flex-wrap: wrap;
     }
     header .nav-lateral {
         display: none;
+        margin: 20px 0;
+    }
+    header .nav-lateral--small {
+        display: flex;
     }
 }
