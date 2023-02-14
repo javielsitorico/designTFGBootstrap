@@ -40,7 +40,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 
 header div.logo-cabecera {
@@ -129,6 +129,7 @@ nav {
     display: none;
     background-color: var(--negro-claro);
     padding: 0;
+    border-bottom: 3px solid var(--negro);
 }
 
 .opcion-menu:hover {
@@ -180,4 +181,19 @@ header .nav-lateral {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+    }
+    header .logo-cabecera {
+        margin: 15px 0;
+    }
+    header nav .barra-navegacion .opcion-menu .menu-desplegable {
+        top: 200px;
+    }
+    header .nav-lateral {
+        display: none;
+    }
 }
