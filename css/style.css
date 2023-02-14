@@ -129,7 +129,7 @@ nav {
     display: none;
     background-color: var(--negro-claro);
     padding: 0;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid var(--negro);
 }
 
 .opcion-menu:hover {
