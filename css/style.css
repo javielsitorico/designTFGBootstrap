@@ -190,6 +190,34 @@ header .nav-lateral--small {
     user-select: none;
 }
 
+/* -- Home - Main -- */
+
+section.home-introduccion {
+    height: 450px;
+    background-image: url('./../img/home-imagen-fondo.png');
+    background-size: cover;
+    background-position: center top;
+}
+
+section.home-introduccion h1 {
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--blanco);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+section.home-introduccion h1 span {
+    color: var(--azul);
+    text-shadow: none;
+}
+
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
@@ -207,5 +235,14 @@ header .nav-lateral--small {
     }
     header .nav-lateral--small {
         display: flex;
+    }
+    section.home-introduccion {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    section.home-introduccion h1 {
+        font-size: 30px;
     }
 }
