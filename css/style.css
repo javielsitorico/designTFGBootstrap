@@ -98,7 +98,7 @@ header nav .barra-navegacion {
     margin: 0;
 }
 
-header nav *>li {
+.barra-navegacion > li {
     list-style: none;
 }
 
@@ -109,8 +109,7 @@ header nav .barra-navegacion .opcion-menu {
     padding: 0 20px;
 }
 
-header nav .barra-navegacion .opcion-menu a,
-header nav .barra-navegacion .opcion-menu .menu-desplegable li a {
+header nav .barra-navegacion .opcion-menu a {
     color: var(--blanco);
 }
 
@@ -118,55 +117,10 @@ header nav .barra-navegacion .opcion-menu a:hover{
     color: var(--blanco-hover);
 }
 
-nav {
-    background-color: var(--navColor);
-}
-
-.navbar li:hover {
-    background-color: var(--navHover);
-}
-
-.menu-desplegable {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    display: none;
-    background-color: var(--negro-claro);
-    padding: 0;
-    border-bottom: 3px solid var(--negro);
-}
-
-.opcion-menu:hover {
-    background-color: var(--negro-claro);
-    cursor: default;
-}
-
-.opcion-menu .menu-desplegable {
-    flex-direction: row;
-    width: 100%;
-    min-height: 80px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.opcion-menu:hover .menu-desplegable {
-    display: flex;
-}
-
-header nav .barra-navegacion .opcion-menu .menu-desplegable li:hover a {
-    color: var(--blanco-hover);
-    cursor: pointer;
-}
-
 header .nav-lateral {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-header .nav-lateral--small {
-    display: none;
 }
 
 .nav-lateral .nav-lateral--carrito {
@@ -229,16 +183,8 @@ section.home-introduccion h1 span {
     header .logo-cabecera {
         margin-top: 20px;
     }
-    header nav .barra-navegacion .opcion-menu .menu-desplegable {
-        top: 262px;
-        flex-wrap: wrap;
-    }
     header .nav-lateral {
-        display: none;
-        margin: 20px 0;
-    }
-    header .nav-lateral--small {
-        display: flex;
+        margin-bottom: 25px;
     }
     section.home-introduccion {
         height: 300px;
