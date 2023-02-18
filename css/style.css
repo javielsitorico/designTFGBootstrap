@@ -243,6 +243,30 @@ div.home-contenido {
     grid-row: 1 / 2;
 }
 
+.home-contenido--aside h3 {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--mostaza);
+}
+
+.home-contenido--aside h3:nth-child(even) {
+    color: var(--azul);
+}
+
+.home-contenido--aside .banner-logos {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    gap: 5%;
+}
+
+.home-contenido--aside .banner-logos img {
+    width: 22%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    mix-blend-mode: darken;
+}
+
 /* -- Media Queries -- */
 
 @media (max-width: 1024px) {
@@ -257,6 +281,9 @@ div.home-contenido {
     }
     section.home-introduccion {
         height: 300px;
+    }
+    div.home-contenido {
+        grid-template-columns: 1fr;
     }
 }
 
