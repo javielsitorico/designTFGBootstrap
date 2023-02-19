@@ -64,111 +64,80 @@
             </svg>
         </div>
     </header>
-    
-    <main>
 
+    <main class="main-carrito">
 
-        <section class="home-introduccion">
+        <section class="carrito-lista">
 
-            <h1>Nueva <span>colección</span> primavera verano.</h1>
+            <div class="producto">
+                <img src="img/camiseta-rip-n-dip.jpg" alt="">
+                <div class="informacion">
+                    <p>Camiseta Ripndip</p>
+                    <p class="mt-2"><span class="text-muted text-decoration-line-through">60.00€</span>&nbsp;&nbsp;48.00€</p>
+                    <input class="mt-2 form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                </div>
+                <a href="carrito.html"><button class="btn btn-outline-dark flex-shrink-0" type="button">Eliminar del carrito</button></a>
+            </div>
+
+            <div class="producto">
+                <img src="img/vomero-5.png" alt="">
+                <div class="informacion">
+                    <p>Vomero 5</p>
+                    <p class="mt-2"><span class="text-muted text-decoration-line-through">140€</span>&nbsp;&nbsp;125.00€</p>
+                    <input class="mt-2 form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                </div>
+                <a href="carrito.html"><button class="btn btn-outline-dark flex-shrink-0" type="button">Eliminar del carrito</button></a>
+            </div>
+
+            <div class="producto">
+                <img src="img/baggy-jeans.jpg" alt="">
+                <div class="informacion">
+                    <p>Baggy Jeans</p>
+                    <p class="mt-2">26.70€</p>
+                    <input class="mt-2 form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                </div>
+                <a href="carrito.html"><button class="btn btn-outline-dark flex-shrink-0" type="button">Eliminar del carrito</button></a>
+            </div>
+
+            <div class="producto">
+                <img src="img/sudadera-nike.jpeg" alt="">
+                <div class="informacion">
+                    <p>Sudadera Nike</p>
+                    <p class="mt-2">80.00€</p>
+                    <input class="mt-2 form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                </div>
+                <a href="carrito.html"><button class="btn btn-outline-dark flex-shrink-0" type="button">Eliminar del carrito</button></a>
+            </div>
 
         </section>
 
-        <div class="contenedor home-contenido">
-            <section class="home-contenido--principal">
-
-                <article>
-                    <div class="informacion">
-                        <h3>Nueva colección primavera verano</h3>
-                        <p>
-                            Nostrud non ullamco aliqua labore quis mollit nulla deserunt in ut amet sit ex. Esse eiusmod
-                            officia nulla dolore elit quis ea officia duis. Consequat aliqua aute commodo tempor officia
-                            ex enim id occaecat ad id est. Qui labore reprehenderit laboris do dolore Lorem adipisicing
-                            sint occaecat.
-                        </p>
-                        <a class="enlace" href="#">Saber más</a>
-                    </div>
-                    <img src="img/gorra-nike.jpg" alt="">
-                </article>
-
-                <article>
-                    <div class="informacion">
-                        <h3>Prendas made in Madrid</h3>
-                        <p>
-                            Id id duis magna enim quis excepteur cillum anim ipsum ipsum dolore. Id anim Lorem est
-                            mollit
-                            aute ut officia elit mollit ex et tempor. Exercitation quis laboris nostrud qui cillum
-                            aliquip veniam.
-                        </p>
-                        <a class="enlace" href="#">Saber más</a>
-                    </div>
-                    <img src="img/sudadera-nike.jpeg" alt="">
-                </article>
-
-                <article>
-                    <div class="informacion">
-                        <h3>Últimos lanzamientos Nike SB</h3>
-                        <p>
-                            Anim incididunt dolore adipisicing nisi. Ex consequat nostrud voluptate consequat. Ad
-                            cupidatat consequat deserunt anim ullamco. Laboris nostrud enim nulla Lorem velit
-                            reprehenderit quis esse in exercitation anim incididunt do voluptate. Aute velit nostrud non
-                            nostrud.
-                        </p>
-                        <a class="enlace" href="#">Saber más</a>
-                    </div>
-                    <img src="img/dunk-strangelove.jpg" alt="">
-                </article>
-
-            </section>
-            <aside class="home-contenido--aside">
-                <h3>¿Por qué comprar con nosotros?</h3>
-                <p>
-                    Ea irure labore nostrud cupidatat irure aliquip labore esse duis nisi consequat ad amet velit. Culpa
-                    et laborum voluptate veniam duis. Eiusmod velit ipsum ut in eu aliquip sit irure reprehenderit
-                    laboris irure do esse do. Sint qui dolor sit sint dolor quis.
-                </p>
-                <h3>Envío gratuito en cualquier pedido superior a 50€.</h3>
-                <h3>Tendencias en este momento:</h3>
-                <div class="banner-logos">
-                    <img src="img/logos/New-Balance-logo.jpg" alt="">
-                    <img src="img/logos/pegatina-carhartt-logo-letras-vinilo.png" alt="">
-                    <img src="img/logos/PUMA-logo.jpg" alt="">
-                    <img src="img/logos/vinilos-decorativos-logo-nike.jpg" alt="">
+        <aside class="carrito-ticket">
+            <div class="ticket-productos">
+                <div class="ticket-productos--producto">
+                    <p class="nombre-producto">Camiseta Ripndip</p>
+                    <span></span>
+                    <p>48.00€</p>
                 </div>
-                <h3>Producto destacado:</h3>
-                <div class="producto--contenedor-sm">
-                    <img src="img/jordan-1-high-fearless.png" alt="Jordan 1 fearless">
-                    <h4>Jordan 1 Fearless</h4>
-                    <div class="text-center"><a class="enlace-boton" href="articulo.html">Ver producto</a></div>
+                <div class="ticket-productos--producto">
+                    <p class="nombre-producto">Vomero 5</p>
+                    <span></span>
+                    <p>125.00€</p>
                 </div>
-            </aside>
-        </div>
-
-        <section class="home-banner">
-            <h2>Descuentos semanales:</h2>
-            <div class="banner--productos">
-                <div class="producto--contenedor-sm">
-                    <img src="img/pack-anillos.jpg" alt="">
-                    <h4>Pack Anillos</h4>
-                    <div class="text-center"><a class="enlace-boton" href="articulo.html">Ver producto</a></div>
+                <div class="ticket-productos--producto">
+                    <p class="nombre-producto">Pantalones Baggy</p>
+                    <span></span>
+                    <p>26.70€</p>
                 </div>
-                <div class="producto--contenedor-sm">
-                    <img src="img/camiseta-rip-n-dip.jpg" alt="">
-                    <h4>Camiseta Ripndip</h4>
-                    <div class="text-center"><a class="enlace-boton" href="articulo.html">Ver producto</a></div>
-                </div>
-                <div class="producto--contenedor-sm">
-                    <img src="img/chandal-carhartt.webp" alt="">
-                    <h4>Chandal Carhartt</h4>
-                    <div class="text-center"><a class="enlace-boton" href="articulo.html">Ver producto</a></div>
-                </div>
-                <div class="producto--contenedor-sm">
-                    <img src="img/grin-t-shirt.jpg" alt="">
-                    <h4>Camiseta Carhartt</h4>
-                    <div class="text-center"><a class="enlace-boton" href="articulo.html">Ver producto</a></div>
+                <div class="ticket-productos--producto">
+                    <p class="nombre-producto">Sudadera Nike</p>
+                    <span></span>
+                    <p>80.00€</p>
                 </div>
             </div>
-        </section>
+            <img src="img/codigoBarras.png" alt="Código de barras">
+            <p class="ticket--precio text-end">279.70€</p>
+            <a href="carrito.html" class="ticket--precio text-end">Pagar</a>
+        </aside>
 
     </main>
 
@@ -196,7 +165,7 @@
                         <p>Baggy Jeans</p>
                         <p class="precio">18.00€</p>
                     </div>
-                    <a class="enlace" href="carrito.html">Ver producto</a>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
                 </div>
                 <div class="producto">
                     <img src="img/camiseta-rip-n-dip.jpg" alt="">
@@ -204,7 +173,7 @@
                         <p>Camiseta Ripndip</p>
                         <p class="precio"><span class="text-muted text-decoration-line-through">60.00€</span>&nbsp;&nbsp;48.00€</p>
                     </div>
-                    <a class="enlace" href="carrito.html">Ver producto</a>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
                 </div>
                 <div class="producto">
                     <img src="img/dunk-sb_heineken.png" alt="">
@@ -212,7 +181,7 @@
                         <p>Nike Dunk SB Heineken</p>
                         <p class="precio"><span class="text-muted text-decoration-line-through">225.00€</span>&nbsp;&nbsp;140.00€</p>
                     </div>
-                    <a class="enlace" href="carrito.html">Ver producto</a>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
                 </div>
             </div>
         </div>

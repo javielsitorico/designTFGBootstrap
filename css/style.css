@@ -21,6 +21,7 @@ body {
 }
 
 a {
+    color: var(--azul);
     text-decoration: none;
 }
 
@@ -198,6 +199,7 @@ section.home-introduccion h1 span {
 }
 
 /* -- Home - Contenido -- */
+
 div.home-contenido {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -371,6 +373,101 @@ div.home-contenido {
     background-size: cover;
 }
 
+/* -- Carrito - Main -- */
+
+main.main-carrito {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+/* -- Carrito - Lista -- */
+
+section.carrito-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.carrito-lista .producto {
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.125);
+}
+
+section.carrito-lista .producto img {
+    max-width: 30%;
+    max-height: 200px;
+    border-radius: 5px 0 0 5px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+section.carrito-lista .producto .informacion {
+    flex: 1;
+    font-size: 18px;
+    padding: 20px;
+}
+
+section.carrito-lista .producto a {
+    margin: auto 20px 20px auto;
+}
+
+/* -- Carrito - Ticket -- */
+
+aside.carrito-ticket {
+    padding: 0px;
+    background-color: var(--gris);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.125);
+    padding: 30px;
+    height: fit-content;
+}
+
+aside.carrito-ticket .ticket-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside.carrito-ticket .ticket-productos--producto {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+aside.carrito-ticket .ticket-productos--producto .nombre-producto {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+aside.carrito-ticket .ticket-productos--producto span {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 1px;
+}
+
+aside.carrito-ticket img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+aside.carrito-ticket .ticket--precio {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+aside.carrito-ticket a.ticket--precio {
+    color: var(--azul);
+}
+
 /* -- Modal Busqueda -- */
 .modal {
     display: none;
@@ -418,7 +515,7 @@ div.home-contenido {
     border-radius: 10px;
     border: 1px solid var(--gris);
     outline: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
     flex: 1;
     margin-right: 10px;
 }
@@ -448,6 +545,7 @@ div.home-contenido {
 .modal-contenido .lista-productos .producto .informacion p.precio {
     font-weight: 400;
     font-size: 18px;
+    padding: 10px 0;
 }
 .modal-contenido .lista-productos .producto a {
     margin: auto 0 0 auto;
@@ -491,6 +589,20 @@ div.home-contenido {
         max-height: 246px;
         max-width: 60%;
         margin: 0 auto;
+    }
+    main.main-carrito {
+        grid-template-columns: 1fr;
+    }
+
+    section.carrito-lista .producto {
+        flex-direction: column;
+    }
+    section.carrito-lista .producto img {
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        border-radius: 5px 5px 0 0;
     }
 }
 
