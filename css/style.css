@@ -51,6 +51,10 @@ img {
     height: auto;
 }
 
+input {
+    outline: none;
+}
+
 /* -- Cabecera -- */
 header {
     background-color: var(--negro);
@@ -468,6 +472,62 @@ aside.carrito-ticket a.ticket--precio {
     color: var(--azul);
 }
 
+/* -- Contacto - Main -- */
+
+.contenido--formulario {
+    min-height: 200px;
+    padding: 40px;
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.formulario--campo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.formulario--campo_vertical {
+    flex-direction: column;
+}
+
+.campo_etiqueta {
+    background-color: var(--azul);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: bold;
+    height: fit-content;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.campo_etiqueta-ancha {
+    min-width: 150px;
+}
+
+.campo_input {
+    padding: 10px;
+    border: none;
+    flex: 1;
+    font-size: 15px;
+    width: inherit;
+    transition: all ease .4s;
+}
+
+.campo_input:focus {
+    transform: translate(0, -3px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* -- Modal Busqueda -- */
 .modal {
     display: none;
@@ -604,6 +664,12 @@ aside.carrito-ticket a.ticket--precio {
         object-fit: contain;
         border-radius: 5px 5px 0 0;
     }
+    .contenido--formulario {
+        width: 90%;
+    }
+    .formulario--campo {
+        flex-direction: column;
+   }
 }
 
 @media (max-width: 480px) {
