@@ -37,11 +37,13 @@
         </nav>
 
         <div class="nav-lateral">
-            <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M11.0667 12L6.86667 7.8C6.53333 8.06667 6.15 8.27778 5.71667 8.43333C5.28333 8.58889 4.82222 8.66667 4.33333 8.66667C3.12222 8.66667 2.09733 8.24733 1.25867 7.40867C0.419556 6.56956 0 5.54444 0 4.33333C0 3.12222 0.419556 2.09711 1.25867 1.258C2.09733 0.419333 3.12222 0 4.33333 0C5.54444 0 6.56956 0.419333 7.40867 1.258C8.24733 2.09711 8.66667 3.12222 8.66667 4.33333C8.66667 4.82222 8.58889 5.28333 8.43333 5.71667C8.27778 6.15 8.06667 6.53333 7.8 6.86667L12 11.0667L11.0667 12ZM4.33333 7.33333C5.16667 7.33333 5.87511 7.04178 6.45867 6.45867C7.04178 5.87511 7.33333 5.16667 7.33333 4.33333C7.33333 3.5 7.04178 2.79156 6.45867 2.208C5.87511 1.62489 5.16667 1.33333 4.33333 1.33333C3.5 1.33333 2.79156 1.62489 2.208 2.208C1.62489 2.79156 1.33333 3.5 1.33333 4.33333C1.33333 5.16667 1.62489 5.87511 2.208 6.45867C2.79156 7.04178 3.5 7.33333 4.33333 7.33333Z"
-                    fill="#F4F4F8" />
-            </svg>
+            <a class="enlace-busqueda" onclick="document.getElementById('modal').style.display='block'">
+                <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.0667 12L6.86667 7.8C6.53333 8.06667 6.15 8.27778 5.71667 8.43333C5.28333 8.58889 4.82222 8.66667 4.33333 8.66667C3.12222 8.66667 2.09733 8.24733 1.25867 7.40867C0.419556 6.56956 0 5.54444 0 4.33333C0 3.12222 0.419556 2.09711 1.25867 1.258C2.09733 0.419333 3.12222 0 4.33333 0C5.54444 0 6.56956 0.419333 7.40867 1.258C8.24733 2.09711 8.66667 3.12222 8.66667 4.33333C8.66667 4.82222 8.58889 5.28333 8.43333 5.71667C8.27778 6.15 8.06667 6.53333 7.8 6.86667L12 11.0667L11.0667 12ZM4.33333 7.33333C5.16667 7.33333 5.87511 7.04178 6.45867 6.45867C7.04178 5.87511 7.33333 5.16667 7.33333 4.33333C7.33333 3.5 7.04178 2.79156 6.45867 2.208C5.87511 1.62489 5.16667 1.33333 4.33333 1.33333C3.5 1.33333 2.79156 1.62489 2.208 2.208C1.62489 2.79156 1.33333 3.5 1.33333 4.33333C1.33333 5.16667 1.62489 5.87511 2.208 6.45867C2.79156 7.04178 3.5 7.33333 4.33333 7.33333Z"
+                        fill="#F4F4F8" />
+                </svg>
+            </a>
             <div class="nav-lateral--carrito">
                 <svg width="24" height="24" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -50,11 +52,6 @@
                 </svg>
                 <p class="nav-lateral--carrito--num-productos">5</p>
             </div>
-            <svg width="24" height="24" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M6.99992 12.2333L6.03325 11.3533C2.59992 8.24 0.333252 6.18 0.333252 3.66667C0.333252 1.60667 1.94659 0 3.99992 0C5.15992 0 6.27325 0.54 6.99992 1.38667C7.72659 0.54 8.83992 0 9.99992 0C12.0533 0 13.6666 1.60667 13.6666 3.66667C13.6666 6.18 11.3999 8.24 7.96659 11.3533L6.99992 12.2333Z"
-                    fill="#F4F4F8" />
-            </svg>
             <svg width="24" height="24" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M0.666748 14.6667C0.666748 13.2522 1.22865 11.8956 2.22885 10.8955C3.22904 9.89526 4.58559 9.33335 6.00008 9.33335C7.41457 9.33335 8.77112 9.89526 9.77132 10.8955C10.7715 11.8956 11.3334 13.2522 11.3334 14.6667H0.666748ZM6.00008 8.66669C3.79008 8.66669 2.00008 6.87669 2.00008 4.66669C2.00008 2.45669 3.79008 0.666687 6.00008 0.666687C8.21008 0.666687 10.0001 2.45669 10.0001 4.66669C10.0001 6.87669 8.21008 8.66669 6.00008 8.66669Z"
@@ -77,7 +74,7 @@
                                 width="400px" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Nike Air Max 1</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Nike Air Max 1</a></h5>
                                     160.00€
                                 </div>
                             </div>
@@ -95,7 +92,7 @@
                                 alt="Vans Old SkoolVans Old Skool" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Vans Old Skool</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Vans Old Skool</a></h5>
                                     <span class="text-muted text-decoration-line-through">35.00€</span>
                                     48.00€
                                 </div>
@@ -113,7 +110,7 @@
                             <img class="card-img-top" src="img/dunk-sb_heineken.png" alt="Nike Dunk SB Heineken" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Nike Dunk SB Heineken</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Nike Dunk SB Heineken</a></h5>
                                     <span class="text-muted text-decoration-line-through">260.00€</span>
                                     145.00€
                                 </div>
@@ -131,7 +128,7 @@
                             <img class="card-img-top" src="img/adidas-diego-najera.png" alt="Adidas Diego Najera" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Adidas Diego Najera</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Adidas Diego Najera</a></h5>
                                     <span class="text-muted text-decoration-line-through">150.00€</span>
                                     125.00€
                                 </div>
@@ -147,7 +144,7 @@
                             <img class="card-img-top" src="img/etnies-marana.jpg" alt="Etnies Marana" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Etnies Marana</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Etnies Marana</a></h5>
                                     90.00€
                                 </div>
                             </div>
@@ -163,7 +160,7 @@
                                 heigth="350px" width="400px" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Nike Dunk SB Strangelove</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Nike Dunk SB Strangelove</a></h5>
                                     240.00€ - 1200.00€
                                 </div>
                             </div>
@@ -180,7 +177,7 @@
                             <img class="card-img-top" src="img/jordan-1-high-fearless.png" alt="Jordan 1 High Fearless" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Jordan 1 High Fearless</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Jordan 1 High Fearless</a></h5>
                                     <span class="text-muted text-decoration-line-through">80.00€</span>
                                     58.00€
                                 </div>
@@ -196,7 +193,7 @@
                             <img class="card-img-top" src="img/blue-chil.jpg" alt="Jordan 1 High UNC Patent" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder text-primary">Jordan 1 High UNC</h5>
+                                    <h5 class="fw-bolder text-primary"><a href="articulo.html">Jordan 1 High UNC</a></h5>
                                     440.00€
                                 </div>
                             </div>
@@ -220,6 +217,46 @@
             <p class="m-0 text-center text-white">Copyright &copy; AguacateShop 2023</p>
         </div>
     </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span onclick="document.getElementById('modal').style.display='none'" class="close">&times;</span>
+            <div class="cuadro-busqueda">
+                <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.0667 12L6.86667 7.8C6.53333 8.06667 6.15 8.27778 5.71667 8.43333C5.28333 8.58889 4.82222 8.66667 4.33333 8.66667C3.12222 8.66667 2.09733 8.24733 1.25867 7.40867C0.419556 6.56956 0 5.54444 0 4.33333C0 3.12222 0.419556 2.09711 1.25867 1.258C2.09733 0.419333 3.12222 0 4.33333 0C5.54444 0 6.56956 0.419333 7.40867 1.258C8.24733 2.09711 8.66667 3.12222 8.66667 4.33333C8.66667 4.82222 8.58889 5.28333 8.43333 5.71667C8.27778 6.15 8.06667 6.53333 7.8 6.86667L12 11.0667L11.0667 12ZM4.33333 7.33333C5.16667 7.33333 5.87511 7.04178 6.45867 6.45867C7.04178 5.87511 7.33333 5.16667 7.33333 4.33333C7.33333 3.5 7.04178 2.79156 6.45867 2.208C5.87511 1.62489 5.16667 1.33333 4.33333 1.33333C3.5 1.33333 2.79156 1.62489 2.208 2.208C1.62489 2.79156 1.33333 3.5 1.33333 4.33333C1.33333 5.16667 1.62489 5.87511 2.208 6.45867C2.79156 7.04178 3.5 7.33333 4.33333 7.33333Z"
+                        fill="#1C1C1C" />
+                </svg>
+                <input type="text" placeholder="Escribe algo para buscar...">
+            </div>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="img/baggy-jeans.jpg" alt="">
+                    <div class="informacion">
+                        <p>Baggy Jeans</p>
+                        <p class="precio">18.00€</p>
+                    </div>
+                    <a class="enlace">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="img/camiseta-rip-n-dip.jpg" alt="">
+                    <div class="informacion">
+                        <p>Camiseta Ripndip</p>
+                        <p class="precio"><span class="text-muted text-decoration-line-through">60.00€</span>&nbsp;&nbsp;48.00€</p>
+                    </div>
+                    <a class="enlace">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="img/dunk-sb_heineken.png" alt="">
+                    <div class="informacion">
+                        <p>Nike Dunk SB Heineken</p>
+                        <p class="precio"><span class="text-muted text-decoration-line-through">225.00€</span>&nbsp;&nbsp;140.00€</p>
+                    </div>
+                    <a class="enlace">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/gsap.min.js"></script>
     <script src="js/script.js"></script>
