@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --blanco: #F4F4F8;
-    --gris: #f1f1f1;
+    --blanco: #FCFCFC;
+    --gris: #f0f0f0;
     --negro: #1C1C1C;
     --negro-claro: #2b2b2b;
     --mostaza: #FED766;
@@ -17,6 +17,7 @@
 
 body {
     margin: 0;
+    background-color: var(--blanco);
 }
 
 a {
@@ -222,14 +223,25 @@ div.home-contenido {
 
 .home-contenido--principal article .informacion {
     grid-column: 1 / 3;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .home-contenido--principal article .informacion .enlace {
-    font-weight: 600;
-    margin: 0 auto;
+    color: var(--blanco);
+    background-color: var(--azul);
+    border: 1px solid var(--azul);
+    font-weight: 300;
+    padding: 5px 15px;
+    margin: auto 0 0 auto;
+    transition: all ease .3s;
+    border-radius: 5px;
 }
 
 .home-contenido--principal article .informacion .enlace:hover {
+    background-color: var(--blanco);
     color: var(--azul);
 }
 
@@ -246,7 +258,6 @@ div.home-contenido {
     grid-column: 3 / 4;
     height: 100%;
     aspect-ratio: 1 / 1;
-    max-height: 210px;
     object-fit: contain;
     align-self: center;
     justify-self: center;
@@ -261,7 +272,8 @@ div.home-contenido {
     font-weight: 800;
     font-size: 24px;
     color: var(--mostaza);
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .home-contenido--aside h3:nth-child(even) {
@@ -288,7 +300,44 @@ div.home-contenido {
     transform: scale(1.2);
 }
 
+
+.producto--contenedor-sm {
+    background-color: var(--gris);
+    border-radius: 25px 0 25px 0;
+    max-width: 300px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.producto--contenedor-sm h4 {
+    text-align: center;
+    color: var(--negro);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.producto--contenedor-sm img {
+    border-radius: 25px 0 0 0;
+
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.producto--contenedor-sm div {
+    padding-bottom: 20px;
+}
+.producto--contenedor-sm .enlace-boton {
+    color: var(--negro);
+    font-weight: 300;
+}
+.producto--contenedor-sm .enlace-boton:hover {
+    color: var(--azul);
+}
+
 /* -- Home - Banner -- */
+
 .home-banner {
     background: linear-gradient(138deg, rgba(251,226,153,1) 0%, rgba(246,206,86,1) 100%);
     padding: 50px;
@@ -307,39 +356,12 @@ div.home-contenido {
     gap: 70px;
 }
 
-.home-banner .banner--productos .banner--productos_producto {
-    background-color: var(--blanco);
-    border-radius: 25px 0 25px 0;
-    max-width: 300px;
-    margin: 0 auto;
-    align-self: center;
-}
+/* -- Seccion - Main -- */
 
-.home-banner .banner--productos .banner--productos_producto h4 {
-    text-align: center;
-    color: var(--negro);
-    font-weight: 700;
-    margin: 20px 0;
-}
-
-.home-banner .banner--productos .banner--productos_producto img {
-    border-radius: 25px 0 0 0;
-
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: center;
-}
-
-.home-banner .banner--productos .banner--productos_producto div {
-    padding-bottom: 20px;
-}
-.home-banner .banner--productos .banner--productos_producto .enlace-boton {
-    color: var(--negro);
-    font-weight: 300;
-}
-.home-banner .banner--productos .banner--productos_producto .enlace-boton:hover {
-    color: var(--azul);
+.fondo-hombre {
+    background-image: url('./../img/home-imagen-hombre.jpg');
+    background-position: 0 20%;
+    background-size: cover;
 }
 
 /* -- Media Queries -- */
@@ -372,6 +394,21 @@ div.home-contenido {
 @media (max-width: 480px) {
     section.home-introduccion h1 {
         font-size: 30px;
+    }
+    .home-contenido--principal article {
+        grid-template-columns: 1fr;
+    }
+    .home-contenido--principal article .informacion,
+    .home-contenido--principal article:nth-child(odd) .informacion {
+        grid-column: 1;
+    }    
+    .home-contenido--principal article img {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        margin-bottom: 20px;
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
     }
     .home-banner .banner--productos {
         grid-template-columns: auto;
